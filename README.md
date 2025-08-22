@@ -44,3 +44,40 @@ ps aux // Tüm süreçleri detaylı gösterir
 | a       | Tüm kullanıcıların süreçlerini gösterir |
 | u       | Kullanıcı bilgilerini ekler |
 | x       | Terminale bağlı olmayan süreçleri gösterir |
+
+# Htop komutu
+kullanıcı dostu arayüz 
+* htop komutu ile girilir. çıkış: F10
+* F1: yardım 
+* F2: yapılandırma
+* F3:sonlandırma
+
+  # Paket Yönetimi
+  paket yöneticisi program kurma güncelleme kaldırma işlemlerini kolaylaştırır.
+  * kurulum
+    ```bash
+    sudo apt install package_name
+    ```
+    
+  * güncelleme
+    ```bash 
+    sudo apt update && sudo apt upgrade
+      ```
+  * kaldırma
+    ```bash 
+    sudo apt remove package_name
+     ```
+ 
+# dağıtıma göre paket yöneticileri
+
+    - Ubuntu/Debian: apt veya dpkg
+    - Fedora/Red Hat: dnf veya yum
+    - Arch Linux: pacman
+# Kill Komutu 
+
+işlemi sonlandırma
+   ```bash 
+kill [sinyal] [PID]  // syntax
+kill -15 1234
+kill -SIGTERM 1234
+  ```
